@@ -1,16 +1,15 @@
-import * as React from 'react';
-import './App.css';
-import { Deck, Slide, Text } from 'spectacle';
+import * as React from "react";
+import intro from "./Intro";
+import "./App.css";
+import { Deck, Slide, Text } from "spectacle";
 
 class App extends React.Component {
   public render() {
     return (
       <Deck>
+        {intro}
         <Slide>
-          <Text>WASSUP</Text>
-        </Slide>
-        <Slide>
-          <Text>BROTHA!</Text>
+          <Text>After the intro</Text>
         </Slide>
       </Deck>
     );
